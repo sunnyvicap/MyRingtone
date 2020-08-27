@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen20"
+            android:layout_marginEnd="@dimen/margin10"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/NevigationtextViewLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:layout_marginBottom="@dimen/margin10"
+                android:fontFamily="@font/sans_bold"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mEditInputFieldEmail"
+            style="@style/editTextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen30"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/dimen30"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/text_email_address"
+            android:textColorHint="@color/hint"
+            app:hintEnabled="true"
+            app:startIconDrawable="@drawable/person_icon_filled">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mEditTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/margin10"
+                android:textColor="@color/white" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mEditInputFieldPassword"
+            style="@style/editTextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen30"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/dimen30"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/text_password"
+            android:textColorHint="@color/hint"
+            app:hintEnabled="true"
+            app:startIconDrawable="@drawable/password_filled">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mEditTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="@dimen/padding"
+
+                android:textColor="@color/white" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen30"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginEnd="@dimen/dimen30"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <CheckBox
+                android:id="@+id/mShowPasswordLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/white"
+                android:text="@string/show_password"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                style="@style/NevigationtextViewSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/forgot_password"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButtonSignIn"
+            style="@style/NevigationtextViewMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/dimen30"
+            android:layout_marginTop="@dimen/dimen30"
+            android:layout_marginEnd="@dimen/dimen30"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/black" />
+
+        <ProgressBar
+            android:id="@+id/mLoginProgressBar"
+            android:indeterminate="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen30"
+            android:indeterminateBehavior="repeat"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/dimen30"
+            android:layout_marginEnd="@dimen/dimen30"
+            android:progress="10"
+            android:layout_gravity="center_horizontal"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mRegisterLL"
+                style="@style/NevigationtextViewSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/register_text"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+        <!--                <com.google.android.gms.common.SignInButton-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginStart="@dimen/dimen30"-->
+        <!--                    android:layout_marginEnd="@dimen/dimen30"-->
+        <!--                    android:layout_marginTop="@dimen/margin10"-->
+        <!--                    />-->
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+

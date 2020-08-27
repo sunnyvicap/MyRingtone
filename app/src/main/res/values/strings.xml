@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MyRigToneApp</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    //Login
+    <string name="login">Login</string>
+    <string name="update_profile">Uploade Profile</string>
+    <string name="register">Register</string>
+    <string name="login_text">Already Exists ? Login</string>
+    <string name="register_text">If You Are New ? Register</string>
+
+
+    <string name="forgot_password">Forgot Passoword?</string>
+    <string name="show_password">Show Password</string>
+    <string name="text_email_address">Enter Email Or Phone</string>
+    <string name="text_password">Enter Password</string>
+    <string name="text_confirm_assword">Confirm Password</string>
+
+
+    <!--Music Slogan-->
+    <string name="text_userName">Enter Username</string>
+    <string name="email_adress">Email</string>
+    <string name="user_name">Username</string>
+    <string name="user_phone">Phone</string>
+    <string name="rigntone_name">RingtoneName</string>
+    <string name="logout">Logout</string>
+
+
+</resources>

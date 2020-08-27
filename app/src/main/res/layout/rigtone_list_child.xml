@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin10"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:layout_marginTop="@dimen/margin10"
+
+    android:background="@drawable/side_nav_bar"
+    android:layout_height="100dp">
+
+
+    <ProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mProgressBarView"
+        style="?android:progressBarStyle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="15sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/mPLAYRingtone"
+        android:layout_width="60dp"
+        android:layout_margin="@dimen/margin10"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/play_button_filled"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/mPLAYRingtone"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/margin10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mTXTRingtoneTitle"
+            style="@style/NevigationtextViewMedium"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/margin10"
+            android:layout_height="wrap_content"
+            android:text="@string/rigntone_name"/>
+
+        <TextView
+            style="@style/NevigationtextViewSmall"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/margin10"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="25s"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

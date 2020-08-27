@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="190dp"
+    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardCornerRadius="@dimen/fab_margin"
+    app:cardBackgroundColor="@color/white"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin10"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="ADD PHOTO"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin10"/>
+
+        <!-- <include
+           layout="@layout/divider"
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_margin="@dimen/cardradius" />
+     -->
+        <TextView
+            android:id="@+id/openCamera"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            style="@style/NevigationtextViewMedium"
+            android:text="Camera"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin10"/>
+
+
+        <TextView
+            android:id="@+id/openGallery"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Gallery"
+            android:textColor="@color/black"
+            style="@style/NevigationtextViewMedium"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin10" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

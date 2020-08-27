@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "38694750573",
+    "firebase_url": "https://endless-air-230616.firebaseio.com",
+    "project_id": "endless-air-230616",
+    "storage_bucket": "endless-air-230616.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38694750573:android:b4e923274816d63f",
+        "android_client_info": {
+          "package_name": "com.sunny.myrigtoneapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38694750573-4vk5i32t0c7a5k2trn3nek36tn637j1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sunny.myrigtoneapp",
+            "certificate_hash": "7001282bc244d80e1aa277d6336363560df67500"
+          }
+        },
+        {
+          "client_id": "38694750573-9amcoo8u9un4tfo91p1f9sus8e9beac7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMmmlnfJV-EhdekL0oL5XpXic9U4m65Ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38694750573-9amcoo8u9un4tfo91p1f9sus8e9beac7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.UplodeProfileFragment">
+
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/NevigationtextViewLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen30"
+        android:layout_marginTop="@dimen/dimen30"
+        android:fontFamily="@font/sans_bold"
+        android:text="@string/update_profile"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        android:src="@drawable/add_user_logo"/>
+
+    <TextView
+        android:id="@+id/mTXTUserName"
+        style="@style/NevigationtextViewSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_bold"
+        android:drawablePadding="@dimen/padding_small"
+        android:layout_marginTop="@dimen/dimen30"
+        android:text="@string/user_name"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/person_icon_filled"
+        android:layout_marginStart="@dimen/dimen30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+
+    <TextView
+        android:id="@+id/mTXTEMail"
+        style="@style/NevigationtextViewSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_bold"
+        android:text="@string/email_adress"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/margin10"
+        android:drawableLeft="@drawable/email_icon_filled"
+        android:drawablePadding="@dimen/padding_medium"
+        android:layout_marginStart="@dimen/dimen30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTXTUserName" />
+
+
+    <TextView
+        android:id="@+id/mTXTPhone"
+        style="@style/NevigationtextViewSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sans_bold"
+        android:text="@string/user_phone"
+        android:drawableLeft="@drawable/phone_icon_filled"
+        android:drawablePadding="@dimen/padding_small"
+        android:layout_marginTop="@dimen/margin10"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/dimen30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTXTEMail" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mButtonUploadeIn"
+        style="@style/NevigationtextViewMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/margin10"
+        android:text="@string/update_profile"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginStart="@dimen/dimen30"
+        android:layout_marginEnd="@dimen/dimen30"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mTXTPhone" />
+
+
+    <TextView
+        android:id="@+id/mTxtSkip"
+        style="@style/NevigationtextViewLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/sans_bold"
+        android:text="Skip Upload >>"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

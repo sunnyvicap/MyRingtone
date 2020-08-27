@@ -1,0 +1,6 @@
+
+rkotlin:S3776î"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(±ÈâÄ8ö‹¬â-
+Tkotlin:S1172V"5Remove this unused function parameter "chooserTitle".(€‚‹8­®â-
+qkotlin:S117Œ"RRename this local variable to match the regular expression "^[_a-z][a-zA-Z0-9]*$".(®³£¯8ö‹¬â-
+qkotlin:S3776V"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(€‚‹8ö‹¬â-
+pkotlin:S117"RRename this local variable to match the regular expression "^[_a-z][a-zA-Z0-9]*$".(ù»ç58ö‹¬â-

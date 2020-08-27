@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.HomeActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@color/white"
+            android:background="@android:color/transparent"
+            app:itemTextAppearanceActive="@style/NevigationtextViewMedium"
+            app:itemTextColor="@color/white"
+            android:layout_gravity="bottom"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:menu="@menu/bottom_nevigation"/>
+
+
+
+
+
+    <include layout="@layout/content_view_main"/>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
